@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Estilo YouTube</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container-video">
+        <!-- Iframe do YouTube -->
+        <div class="moldura-iframe">
+            <iframe 
+                src="https://www.youtube.com/embed/DqTITcMq68k" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" 
+                referrerpolicy="no-referrer-when-downgrade"
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <!-- Título do Vídeo -->
+        <h1 class="titulo-video">O QUE É GIT E GITHUB? - definição e conceitos importantes 1/2</h1>
+
+        <!-- Informações do Canal e Botões de Ação -->
+        <div class="barra-info-video">
+            <div class="info-canal">
+                <img src="https://avatars.githubusercontent.com/u/54322854?v=4" alt="Rafaella Ballerini" class="avatar-canal">
+                <div class="detalhes-canal">
+                    <span class="nome-canal">Rafaella Ballerini <i class="fas fa-check-circle icone-verificado"></i></span>
+                    <span class="inscritos">372 mil inscritos</span>
+                </div>
+                <button class="botao-inscrever">Inscrever-se</button>
+            </div>
+
+            <div class="botoes-acao">
+                <div class="grupo-curtir-descurtir">
+                    <button class="botao-acao botao-curtir" id="botaoCurtir">
+                        <i class="far fa-thumbs-up"></i>
+                        <span class="contagem">52 mil</span>
+                    </button>
+                    <div class="divisor"></div>
+                    <button class="botao-acao botao-descurtir" id="botaoDescurtir">
+                        <i class="far fa-thumbs-down"></i>
+                    </button>
+                </div>
+                
+                <button class="botao-acao botao-compartilhar">
+                    <i class="fas fa-share"></i>
+                    <span>Compartilhar</span>
+                </button>
+                
+                <button class="botao-acao botao-perguntar">
+                    <i class="fas fa-plus"></i>
+                    <span>Perguntar</span>
+                </button>
+
+                <button class="botao-acao botao-salvar">
+                    <i class="far fa-bookmark"></i>
+                    <span>Salvar</span>
+                </button>
+
+                <button class="botao-acao botao-mais">
+                    <i class="fas fa-ellipsis-h"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
